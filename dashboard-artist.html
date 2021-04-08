@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- {{!-- bootstrap --}} -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <!-- {{!-- font-awesome --}} -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- {{!-- slick carrousel --}} -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <!-- {{!-- aos css --}} -->
+    <link href="./css/aos.css" rel="stylesheet" />
+
+    <!-- {{!-- estilos propios --}} -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>home</title>
+  </head>
+
+  <body>
+    <!-- dashboard  -->
+    <div class="dashboard-admin" id="dashboard-admin">
+      <!-- {{>sidebar-dashboard }} -->
+      <nav class="navbar  navbar-dashboard navbar-expand d-flex flex-column align-item-start active-nav" id="sidebar">
+        <div class="btn-toggle-peque">
+            <i class="menu-btn-toggle fas fa-times"></i>
+        </div>
+        <a href="#" class="navbar-brand text-light ">
+            <div class="sidebar-titles">
+                <h2><img src="./imgs/logo-obscuro.png" alt="" width="200" height="50" /></h2>
+                <h3>admin panel</h3>
+            </div>
+        </a>
+        <div class="navbar-user-connect">
+            <h2 class="d-flex align-items-center justify-content-center">
+                <i class="fas fa-user-circle"></i>
+                <span>pedrohernandez227</span>
+            </h2>
+        </div>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item w-100">
+                <a href="./dashboard.html" class="nav-link text-center active py-3 nav-link-dashboard text-light text-uppercase">
+                    <img src="./imgs/artist.svg" alt="" class="me-2">
+                    artist
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="./dashboard-works.html" class="nav-link text-center py-3 nav-link-dashboard text-light text-uppercase">
+                    <img src="./imgs/works.svg" alt="" class="me-2">
+                    works
+                </a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="./dashboard-sales.html" class="nav-link text-center py-3 nav-link-dashboard text-light text-uppercase">
+                    <img src="./imgs/carrito.svg" alt="" class="me-2">
+                    sales
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav d-flex flex-column mt-5  w-100">
+            <li class="nav-item w-100">
+                <a href="./home.html" class="nav-link pe-4 text-center py-3 nav-link-dashboard text-light text-uppercase">
+                    <img src="./imgs/logout.svg" alt="" class="me-2">
+                    log out
+                </a>
+            </li>
+        </ul>
+    
+    </nav>
+      <!-- {{>sidebar-dashboard }} -->
+      <section class="container-dashboard active-cont">
+        <!-- {{>dashboard-content-breakcrumb currentPage="artist"}} -->
+        <div class="nav-breakcrumb px-4 w-100 d-flex justify-content-between align-items-center">
+          <div class="">
+              <button type="button" class="btn button-menu menu-btn-toggle" id="menu-btn">
+                  <i class="fas fa-bars"></i>
+              </button>
+          </div>
+          <div>
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Slipstream </a></li>
+                      <li class="breadcrumb-item active" aria-current="page">artist</li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+        <!-- {{>dashboard-content-breakcrumb currentPage="artist"}} -->
+
+        <div class="content-container-dashboard">
+          <!-- {{>dashboard-artist-add}} -->
+          <div class="edit-artist">
+            <div class="edit-artist-img">
+                <img src="./imgs/user-circle.svg" class="user-circle" alt="">
+                <img src="./imgs/check.svg" class="checkImage" alt="">
+            </div>
+            <div class="edit-artist-info">
+        
+                <div class="d-flex info-column">
+                    <label for="staticname" class="col-form-label p-0 ">Name:</label>
+                    <input type="text" class="form-control-plaintext p-0  text-uppercase" id="staticname" value="patrcio">
+                </div>
+                <div class="d-flex info-column">
+                    <label for="staticname" class="col-form-label p-0 ">last name:</label>
+                    <input type="text" class="form-control-plaintext p-0  text-uppercase" id="staticname" value="oward">
+                </div>
+                <div class="d-flex info-column">
+                    <label for="staticname" class="col-form-label p-0 ">username:</label>
+                    <input type="text" class="form-control-plaintext p-0  text-uppercase" id="staticname" value="@PATOOWARD">
+                </div>
+        
+            </div>
+            <div class="edit-artist-icon">
+                <i class="fas fa-edit"></i>
+            </div>
+        
+        </div>
+        
+        <div class="w-400px">
+            <h2 class="font-titulo font-wight-bold font-16px text-uppercase mt-5">description</h2>
+        
+            <textarea class="form-control-plaintext reformated-textarea">2 TIMES F4 CHAMPION, BEST CASSIFIED PILOT DURING INDY SOO PRE RACES...</textarea>
+            <div class="text-end">
+                <a href="./dashboard-artist.html" class="btn btn-artist-add px-4 mt-3">
+                    
+                    save
+                </a>
+            </div>
+        </div>
+          <!-- {{>dashboard-artist-add}} -->
+        </div>
+      </section>
+    </div>
+    <!-- dashboard  -->
+
+    <!-- {{!-- Option 1: Bootstrap Bundle with Popper --}} -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 
+    {{!-- JQUERY --}} -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!-- {{!-- slick carrousel --}} -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+
+    <!-- {{!-- aos js --}} -->
+    <script type="text/javascript" src="./js/aos.js"></script>
+
+    <!-- {{!-- estilos propios --}} -->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

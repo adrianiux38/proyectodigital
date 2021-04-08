@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- {{!-- bootstrap --}} -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <!-- {{!-- font-awesome --}} -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- {{!-- slick carrousel --}} -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <!-- {{!-- aos css --}} -->
+    <link href="./css/aos.css" rel="stylesheet" />
+
+    <!-- {{!-- estilos propios --}} -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>home</title>
+  </head>
+
+  <body>
+    <div class="profile" id="profile">
+      <!-- {{!-- NAVBAR --}} -->
+
+      <nav
+        class="navbar navbar-expand-lg fixed-top navbar-obscuro navbar-dark font-titulo"
+        id="navbarNFT"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="./home.html">
+            <!-- NFT MOTOR SPORT -->
+            <img src="./imgs/logo-obscuro.png" alt="" width="200" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a
+                class="nav-link active text-uppercase"
+                aria-current="page"
+                href="/"
+                >Explore</a
+              >
+              <a class="nav-link text-uppercase" href="/">My items</a>
+              <a class="nav-link text-uppercase" href="./profile-bids.html"
+                >activity</a
+              >
+              <a class="nav-link text-uppercase" href="/">how it works</a>
+              <span class="nav-link active d-none d-lg-block"> | </span>
+              <a
+                href="/"
+                class="nav-link text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#LoginPopup"
+                >Login
+                <span class="mx-2">
+                  <i class="fas fa-user-circle"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- {{!-- NAVBAR --}} -->
+
+      <!-- Modal LOGIN -->
+      <div
+        class="modal fade"
+        id="LoginPopup"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="LoginPopupLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body position-relative modal-nft">
+              <p class="mb-0 text-end">
+                <button
+                  class="btn btn-closed p-0 m-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  type="button"
+                >
+                  <i class="fas fa-window-close"></i>
+                </button>
+              </p>
+              <div class="px-md-5 px-2">
+                <h2 class="modal-nft-title text-center m-0">Login</h2>
+                <h3 class="text-center display-1 my-2">
+                  <i class="fas fa-user-circle"></i>
+                </h3>
+                <h2 class="modal-nft-title text-center mb-4">
+                  <img src="./imgs/logo.jpeg" alt="" width="200" height="50" />
+                </h2>
+                <div class="botones">
+                  <a
+                    href="./dashboard.html"
+                    class="w-100 btn rojo font-bold-family25 btn-sesiones text-center"
+                  >
+                    <i class="fab fa-google-plus-g me-2"></i>
+                    login with google
+                  </a>
+                  <a
+                    href="./login.html"
+                    class="w-100 btn azul-obscuro font-bold-family25 btn-sesiones text-center"
+                  >
+                    <i class="fas fa-envelope me-2"></i>
+                    login with email
+                  </a>
+                </div>
+                <p
+                  data-bs-target="#RegisterPopup"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                  class="d-block cursor-pointer mb-4 text-decoration-none text-end line-h-1 font-titulo font-15px font-weight-bold obscuro text-uppercase"
+                >
+                  already have an
+                  <span class="d-block">account</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal LOGIN -->
+
+      <!-- Modal REGISTER -->
+      <div
+        class="modal fade"
+        id="RegisterPopup"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="RegisterPopupLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body position-relative modal-nft">
+              <p class="mb-0 text-end">
+                <button
+                  class="btn btn-closed p-0 m-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  type="button"
+                >
+                  <i class="fas fa-window-close"></i>
+                </button>
+              </p>
+              <div class="px-md-5 px-2">
+                <h2 class="modal-nft-title text-center m-0">register</h2>
+                <h3 class="text-center display-1 my-2">
+                  <i class="fas fa-user-circle"></i>
+                </h3>
+                <h2 class="modal-nft-title text-center mb-4">
+                  <img src="./imgs/logo.jpeg" alt="" width="200" height="50" />
+                </h2>
+                <form action="" class="form-propio">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="EMAIL"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="PASSWORD"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="REPEAT PASSWORD"
+                    />
+                  </div>
+                </form>
+                <div class="text-center">
+                  <button
+                    data-bs-target="#LoginPopup"
+                    data-bs-toggle="modal"
+                    data-bs-dismiss="modal"
+                    class="btn btn-obscuro btn-details mt-0 mb-4 rounded-0 px-4"
+                  >
+                    register
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL REGISTER -->
+
+      <!-- profile bought -->
+      <section class="details pb-3">
+        <div class="container">
+            <div class="contenedor-profile">
+                <div class="profile-image">
+                    <img src="./imgs/user-circle.svg" alt="">
+                </div>
+                <div class="profile-name">
+                    <h2>@pedrohernandez227</h2>
+                </div>
+                <div class="profile-content">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item" ><a href="./profile-bids.html" style="color: inherit;"  class="d-block text-decoration-none">my bids</a></li>
+                        <li class="list-group-item active"><a href="/profile-bought.html" style="color: inherit;"  class="d-block text-decoration-none">bought</a></li>
+                    </ul>
+                    <div class="profile-content-gallery">
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                        <div class="profile-content-gallery-column">
+                            <img src="./imgs/bids.png" alt="">
+                            <p>
+                                el trofeo
+                                <span class="d-block">bought for 12 eth</span>
+                                <span class="text-gris">23/02/21</span>
+                            </p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+        </div>
+    </section>
+      <!-- profile bought -->
+
+      <!-- footer -->
+      <footer class="footer py-5">
+        <div class="container text-white font-texto">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 text-center mt-3">
+              <h2 class="mb-4 font-titulo titulo text-uppercase">
+                NFT Motor Sport
+              </h2>
+              <p class="text-uppercase mb-3 font-13px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                velit reiciendis necessitatibus saepe soluta ullam dicta? Quas
+                sunt hic maiores deserunt ipsa aspernatur, atque perferendis
+                iusto ipsam repudiandae, sint dolor!
+              </p>
+              <p class="iconos display-6">
+                <a href="" class="text-white text-decoration-none">
+                  <i class="fab fa-facebook-square"></i
+                ></a>
+                <a href="" class="text-white text-decoration-none">
+                  <i class="fab fa-instagram-square"></i
+                ></a>
+                <a href="" class="text-white text-decoration-none">
+                  <i class="fab fa-linkedin"></i
+                ></a>
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 mt-3 text-center text-lg-start"
+            >
+              <h2 class="mb-4 font-titulo titulo text-uppercase">
+                marketplace
+              </h2>
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >Browse and Discover</a
+              >
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >Ranking</a
+              >
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >Recently Sold</a
+              >
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >Biggest Sales</a
+              >
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >Most Viewed</a
+              >
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 mt-3 text-center text-lg-start"
+            >
+              <h2 class="mb-4 font-titulo titulo text-uppercase">my account</h2>
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >My items</a
+              >
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >My activity</a
+              >
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >My offers</a
+              >
+              <a
+                href="#"
+                class="d-block text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >My referrals</a
+              >
+              <a
+                href="#"
+                class="d-block text-decoration-none text-decoration-none text-white mb-2 text-uppercase font-13px"
+                >Gift items</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section
+        class="py-3 font-texto text-white text-center"
+        style="background-color: #191919"
+      >
+        <p class="mb-0 font-13px">COPYRIGHT © 2021</p>
+      </section>
+      <!-- footer -->
+
+    </div>
+
+    <!-- {{!-- Option 1: Bootstrap Bundle with Popper --}} -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 
+    {{!-- JQUERY --}} -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!-- {{!-- slick carrousel --}} -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+
+    <!-- {{!-- aos js --}} -->
+    <script type="text/javascript" src="./js/aos.js"></script>
+
+    <!-- {{!-- estilos propios --}} -->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
